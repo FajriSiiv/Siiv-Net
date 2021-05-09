@@ -1,0 +1,254 @@
+:root {
+  --bs-gradient: linear-gradient(180deg, #373e52, #0dcaf000);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #373e52;
+  color: white;
+}
+
+.navbar {
+  z-index: 99;
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-size: 150%;
+  font-weight: 550;
+  letter-spacing: 1px;
+}
+
+.navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+  color: #d4d4d4;
+}
+
+.navbar-toggler {
+  box-shadow: transparent;
+  color: rgba(255, 255, 255, 0.808);
+  border: none;
+  transition: all 0.5s;
+}
+
+.navbar-toggler:focus {
+  color: transparent !important;
+}
+
+.navbar-toggler .bi-filter-right {
+  color: rgba(255, 255, 255, 0.541);
+  font-size: 28px;
+}
+
+.navbar-toggler .bi-filter-right:focus, .navbar-toggler .bi-filter-right:hover {
+  color: #d6d6d6 !important;
+  font-weight: 550;
+}
+
+.navbar-nav {
+  font-size: 18;
+  font-weight: 520;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-item .nav-link:focus, .navbar-nav .nav-item .nav-link:hover {
+  color: rgba(192, 192, 192, 0.904);
+}
+
+@media screen and (max-width: 700px) {
+  .navbar-collapse {
+    position: static;
+  }
+  .navbar-nav {
+    width: 100% !important;
+  }
+}
+
+.wrapper {
+  background-image: url("/img/keyboardOrange.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrapper .container {
+  height: 100vh;
+}
+
+.wrapper-img img {
+  width: 80%;
+}
+
+.wrapper-text {
+  pointer-events: none;
+  color: white;
+}
+
+.wrapper-text h3 {
+  font-weight: 550;
+  font-size: 200%;
+}
+
+.wrapper-text h3 span {
+  color: #be2323;
+  background: white;
+  padding: 0 10px;
+  clip-path: polygon(5% 1%, 100% 0%, 94% 100%, 0 100%);
+}
+
+.wrapper-text p {
+  font-size: 120%;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper-img {
+    display: none;
+  }
+  .wrapper-text {
+    width: 100vw !important;
+  }
+  .wrapper-text h3 {
+    font-size: 140%;
+  }
+  .wrapper-text p {
+    font-size: 90%;
+  }
+}
+
+.about {
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.about .container {
+  height: fit-content;
+}
+
+.about-text {
+  pointer-events: none;
+}
+
+.about-img img {
+  width: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .about .container {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+  .about-text {
+    width: 90% !important;
+    text-align: justify !important;
+  }
+  .about-img {
+    width: 100% !important;
+  }
+}
+
+.gallery {
+  background-image: url("/img/stik.jpg");
+  background-attachment: fixed;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.gallery .container {
+  padding: 100px 0;
+}
+
+.gallery-text h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+
+.gallery-img {
+  text-align: center;
+}
+
+.gallery-img img {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 578px) {
+  .gallery-img img {
+    margin: 3px;
+    border: 1px white solid;
+    max-width: 120px;
+    max-height: 120px;
+  }
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.footer-nav {
+  width: 30%;
+}
+
+.footer-nav .navigations {
+  height: 30vh;
+}
+
+.footer-nav .navigations a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-nav .navigations a:hover, .footer-nav .navigations a:focus {
+  color: #a0a0a0;
+}
+
+.footer-map {
+  width: 70%;
+}
+
+.footer-map .map {
+  width: 50%;
+}
+
+.footer-map .map i {
+  padding-right: 5px;
+}
+
+.footer-map img {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 576px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  .footer .footer-map .map h4 {
+    font-size: 18px;
+  }
+  .footer .footer-map .map p {
+    font-size: 12px;
+  }
+  .footer .footer-map img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

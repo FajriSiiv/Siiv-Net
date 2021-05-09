@@ -1,0 +1,230 @@
+:root {
+  --bs-gradient: linear-gradient(180deg, #373e52, #0dcaf000);
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #373e52;
+  color: white;
+}
+.navbar {
+  // background: #373e526b !important;
+  z-index: 99;
+  .navbar-brand {
+    color: white;
+    font-size: 150%;
+    font-weight: 550;
+    letter-spacing: 1px;
+    &:hover,
+    &:focus {
+      color: rgb(212, 212, 212);
+    }
+  }
+  &-toggler {
+    box-shadow: transparent;
+    color: rgba(255, 255, 255, 0.808);
+    border: none;
+    transition: all 0.5s;
+    &:focus {
+      color: transparent !important;
+    }
+    .bi-filter-right {
+      color: rgba(255, 255, 255, 0.541);
+      font-size: 28px;
+      &:focus,
+      &:hover {
+        color: rgb(214, 214, 214) !important;
+        font-weight: 550;
+      }
+    }
+  }
+  &-nav {
+    font-size: 18;
+    font-weight: 520;
+    letter-spacing: 1px;
+    .nav-item {
+      .nav-link {
+        color: white;
+        &:focus,
+        &:hover {
+          color: rgba(192, 192, 192, 0.904);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 700px) {
+    &-collapse {
+      position: static;
+    }
+    &-nav {
+      width: 100% !important;
+    }
+  }
+}
+.wrapper {
+  background-image: url("/img/keyboardOrange.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    height: 100vh;
+  }
+  &-img {
+    img {
+      width: 80%;
+    }
+  }
+  &-text {
+    pointer-events: none;
+    color: white;
+    h3 {
+      font-weight: 550;
+      font-size: 200%;
+      span {
+        color: rgb(190, 35, 35);
+        background: white;
+        padding: 0 10px;
+        clip-path: polygon(5% 1%, 100% 0%, 94% 100%, 0 100%);
+      }
+    }
+    p {
+      font-size: 120%;
+      letter-spacing: 1px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    &-img {
+      display: none;
+    }
+    &-text {
+      width: 100vw !important;
+      h3 {
+        font-size: 140%;
+      }
+      p {
+        font-size: 90%;
+      }
+    }
+  }
+}
+.about {
+  margin-top: 100px;
+  margin-bottom: 150px;
+  .container {
+    height: fit-content;
+  }
+  &-text {
+    pointer-events: none;
+  }
+  &-img {
+    img {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .container {
+      flex-direction: column-reverse;
+      gap: 15px;
+    }
+    &-text {
+      width: 90% !important;
+      text-align: justify !important;
+    }
+    &-img {
+      width: 100% !important;
+    }
+  }
+}
+
+.gallery {
+  background-image: url("/img/stik.jpg");
+  background-attachment: fixed;
+  background-position: 50% 40%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+  .container {
+    padding: 100px 0;
+  }
+  &-text {
+    h2 {
+      font-size: 40px;
+      letter-spacing: 2px;
+    }
+  }
+  &-img {
+    text-align: center;
+    img {
+      margin: 10px;
+      width: 300px;
+      height: 300px;
+      @media screen and (max-width: 578px) {
+        margin: 3px;
+        border: 1px white solid;
+        max-width: 120px;
+        max-height: 120px;
+      }
+    }
+  }
+}
+.footer {
+  padding: 30px 0;
+  .container {
+  }
+  &-nav {
+    width: 30%;
+    .navigations {
+      height: 30vh;
+      a {
+        text-decoration: none;
+        color: white;
+        &:hover,
+        &:focus {
+          color: #a0a0a0;
+        }
+      }
+    }
+  }
+  &-map {
+    width: 70%;
+    .map {
+      width: 50%;
+      i {
+        padding-right: 5px;
+      }
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .container {
+      flex-direction: column;
+      gap: 20px !important;
+    }
+    .footer-map {
+      .map {
+        h4 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
